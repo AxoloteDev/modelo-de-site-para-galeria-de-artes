@@ -1,0 +1,238 @@
+/* Importações */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+/* variaveis */
+
+:root {
+  --fonteTxto: "Segoe UI", sans-serif;
+  --fonteTitulo: "Raleway", sans-serif;
+}
+
+/* Regras */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Partes */
+
+body {
+  font-size: 1em;
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    font-size: 0.8em;
+  }
+}
+
+/* Cabeçalho */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+header a {
+  font: normal 1.5em var(--fonteTitulo);
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+header a:hover {
+  background-color: #c6c6c6;
+}
+
+/* Grid */
+
+#grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: auto auto auto;
+}
+
+/* Grid > Conteudo */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.cartao {
+  width: 300px;
+  padding: 10px;
+  box-shadow: 1px 1px 5px black;
+  margin-bottom: 40px;
+  margin-left: 10px;
+}
+
+.cartao h1 {
+  text-align: center;
+  margin-top: 10px;
+  font: normal 2em var(--fonteTitulo);
+  color: black;
+  padding: 5px;
+}
+
+.cartao h2 {
+  text-align: center;
+  font: normal 0.8em var(--fonteTxto);
+  margin-top: 7px;
+  padding: 5px;
+}
+
+.cartao p {
+  text-align: center;
+  font: normal 1em var(--fonteTxto);
+  padding: 5px;
+  margin: 5px auto 20px auto;
+}
+
+.cartao a {
+  color: white;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  width: 100px;
+  margin: auto;
+  background-color: black;
+  text-decoration: none;
+  font: normal 1em var(--fonteTxto);
+}
+
+.cartao a:hover {
+  color: black;
+  background-color: #c6c6c6;
+}
+
+/* Grid > Media query */
+
+@media only screen and (max-width: 930px) {
+  #grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* Principal */
+
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#sobre {
+  max-width: 400px;
+  margin-left: 20px;
+}
+
+#sobre h1 {
+  text-align: center;
+  font: normal 1.8em var(--fonteTitulo);
+  margin: 30px auto 30px auto;
+}
+
+#sobre img {
+  margin: auto;
+  display: block;
+  height: auto;
+  width: 300px;
+}
+
+#sobre p {
+  font: normal 1em var(--fonteTxto);
+  max-width: 500px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* A parte */
+
+#form {
+  margin-top: 20%;
+  margin-left: 50px;
+  width: 370px;
+}
+
+#form label {
+  font: normal 1em var(--fonteTitulo);
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#form input {
+  font: normal 1em var(--fonteTxto);
+  display: block;
+  margin: auto;
+  padding: 6px;
+  width: 200px;
+}
+
+#form textarea {
+  display: block;
+  margin: auto;
+  padding: 6px;
+  width: 200px;
+  resize: none;
+  margin-bottom: 30px;
+}
+
+#form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font: normal 1.2em var(--fonteTitulo);
+  color: red;
+}
+
+#form button {
+  background-color: black;
+  font: normal 1em var(--fonteTitulo);
+  color: white;
+  display: block;
+  margin: auto;
+  padding: 10px;
+  width: 100px;
+  border: none;
+}
+
+#form button:hover {
+  color: black;
+  background-color: #c6c6c6;
+}
+
+/* Rodapé */
+
+footer {
+  margin-top: 100px;
+  padding: 20px;
+}
+
+footer p {
+  text-align: center;
+  font: normal 0.9em var(--fonteTitulo);
+  margin-top: 10px;
+  padding: 10px;
+}
+
+footer a {
+  text-decoration: underline;
+  color: black;
+}
+
+footer a:hover {
+  color: #04aa6d;
+}
+
+#autor:hover {
+  color: #ff006a;
+}
